@@ -1,0 +1,41 @@
+.card, 
+.card-front,
+.card-back {
+  width: 80px;
+  height: 112px;
+}
+
+.card {
+  .transform-style(preserve-3d);
+  margin:10px;
+  position: relative;
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.card-front {
+  z-index: 1;
+  background-size: cover;
+
+  .card:nth-child(5n+1) & {background-image: url("./card1.jpg");}
+  .card:nth-child(5n+2) & {background-image: url("./card2.jpg");}
+  .card:nth-child(5n+3) & {background-image: url("./card3.jpg");}
+  .card:nth-child(5n+4) & {background-image: url("./card4.jpg");}
+  .card:nth-child(5n+5) & {background-image: url("./card5.jpg");}
+}
+
+.card-back {
+  background: url("./backside.jpg");
+  background-size: cover;
+  .transform(rotateY(180deg));
+}
+
+// .transform(translateY(40px) rotateY(180deg) rotateZ(-3deg));

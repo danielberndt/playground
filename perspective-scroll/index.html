@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Scroll</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js"></script>
+    <style>
+      html {
+        overflow: hidden;
+        height: 100%;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100%;
+        font-family: "helvetica neue";
+      }
+
+      .cards {
+        background-color: #333;
+        height:600px;
+        width: 100px;
+        overflow-y: auto;
+        perspective: 1px;
+      }
+
+      .card {
+        display: block;
+        height:100px;
+        width: 60px;
+        margin: 10px auto;
+        transform: translateZ(0px);
+        cursor: pointer;
+        z-index: 5;
+        position: relative;
+        box-shadow: 0 0 0 1px rgba(255,255,200,0.0);
+        transition: box-shadow .25s ease-in-out;
+      }
+
+      .card:hover {
+        box-shadow: 0 0 5px 1px rgba(255,255,200,0.8);
+      };
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <img src="http://lorempixel.com/g/60/100/technics/1/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/2/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/3/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/4/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/5/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/6/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/7/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/8/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/9/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/10/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/1/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/2/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/3/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/4/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/5/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/6/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/7/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/8/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/9/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/10/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/1/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/2/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/3/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/4/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/5/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/6/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/7/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/8/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/9/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/10/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/1/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/2/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/3/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/4/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/5/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/6/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/7/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/8/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/9/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/10/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/1/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/2/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/3/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/4/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/5/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/6/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/7/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/8/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/9/" class="card"/>
+      <img src="http://lorempixel.com/g/60/100/technics/10/" class="card"/>
+    </div>
+  </body>
+</html>

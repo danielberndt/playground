@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Parallax</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      body {
+        font-family: "helvetica neue";
+        overflow-y: auto;
+        perspective: 1px;
+      }
+      header {
+        background-color: #fff;
+        padding: 10px;
+        text-align: center;
+        transform: translateZ(0);
+      }
+
+      h1{
+        font-weight: lighter;
+        text-transform: uppercase;
+      }
+
+      .img-pane {
+        background: url(bg.jpg);
+        height:1000px;
+        width: 100%;
+        transform: translateZ(-5px) scale(6);
+        position: absolute;
+      }
+
+      .content {
+        margin-top: 100px;
+        padding:30px;
+        transform: translateZ(0);
+      }
+
+      section {
+        background-color: #fff;
+        max-width: 400px;
+        margin:0 auto 40px;
+        padding:50px;
+        box-shadow: 0 0 50px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img-pane"></div>
+    <header><h1>Attractive<b>Heading</b></h1></header>
+    <div class="content">
+      <section><b>Pure CSS</b> for best scroll performance!</section>
+      <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis minima, saepe dolorum dolore non voluptatibus vero qui corporis iste? Cumque commodi soluta repellendus repudiandae nisi. Explicabo inventore, labore aliquid sequi?</section>
+      <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis minima, saepe dolorum dolore non voluptatibus vero qui corporis iste? Cumque commodi soluta repellendus repudiandae nisi. Explicabo inventore, labore aliquid sequi?</section>
+      <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis minima, saepe dolorum dolore non voluptatibus vero qui corporis iste? Cumque commodi soluta repellendus repudiandae nisi. Explicabo inventore, labore aliquid sequi?</section>
+      <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis minima, saepe dolorum dolore non voluptatibus vero qui corporis iste? Cumque commodi soluta repellendus repudiandae nisi. Explicabo inventore, labore aliquid sequi?</section>
+      <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis minima, saepe dolorum dolore non voluptatibus vero qui corporis iste? Cumque commodi soluta repellendus repudiandae nisi. Explicabo inventore, labore aliquid sequi?</section>
+      <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis minima, saepe dolorum dolore non voluptatibus vero qui corporis iste? Cumque commodi soluta repellendus repudiandae nisi. Explicabo inventore, labore aliquid sequi?</section>
+    </div>
+  </body>
+</html>

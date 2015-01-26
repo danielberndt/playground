@@ -1,0 +1,86 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif; 
+  color: #333;
+  padding: 25px 50px;
+  perspective: 1000px;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.playground {
+  .display(flex);
+}
+
+.card-list {
+  background-color: #eee;
+  margin:-10px;
+  .flex-grow(1);
+  .display(flex);
+  .flex-wrap(wrap);
+  .justify-content(flex-start);
+  border: 10px solid #ddd;
+  border-radius:25px;
+}
+
+.deck-container {
+  background-color: #555;
+  .background-image(radial-gradient(#888 0%,#555 100%));
+  border: 10px dashed #fafafa;
+  border-radius:25px;
+  margin-left:20px;
+  width: 150px;
+  height:250px;
+  padding:20px;
+  .flex-shrink(0);
+}
+
+@button-color: #0b6b00;
+
+.deck {
+  height: 160px;
+}
+
+button {
+  border: 3px solid darken(@button-color, 10%);
+  background-color: @button-color;
+  color:#fff;
+  text-transform: uppercase;
+  padding:5px 10px;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+
+  .transition(.2s);
+
+  &:hover {
+    background-color: lighten(@button-color, 10%);
+  }
+
+  &:active {
+    background-color: @button-color;
+    padding-top:6px;
+    padding-bottom:4px;
+  }
+}
+
+dl {
+  margin-bottom: 20px;
+}
