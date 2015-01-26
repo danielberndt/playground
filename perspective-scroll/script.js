@@ -1,4 +1,4 @@
-var cards, container;
+var cards, container, first=true;
 
 // the more elements, the more delayed the scroll effect.
 var lastScrollTops = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -8,21 +8,22 @@ function recalc() {
   lastScrollTops.push(newScrollTop);
   lastScrollTops.splice(0,1);
   var i, didScroll=false;
-  for (i=0;i<lastScrollTops.length-1;i++) {
+  for (i=0;i < lastScrollTops.length-1;i++) {
     if (lastScrollTops[i]!=lastScrollTops[i+1]) {
       didScroll=true;
       break;
     }
   }
-  if (didScroll) {
+  if (first || didScroll) {
     var avgScroll = 0;
-    for (i=0;i<lastScrollTops.length;i++) avgScroll+=lastScrollTops[i];
+    for (i=0;i < lastScrollTops.length;i++) avgScroll+=lastScrollTops[i];
     avgScroll/=lastScrollTops.length;
     for (i=0;i < cards.length;i++) {
       var c = cards[i];
       c.style.transform = "translateZ("+(-(Math.abs(avgScroll - c.offsetTop+200)/300))+"px)";
       c.style.zIndex = 10000- Math.abs(c.offsetTop-200 - avgScroll);
     }
+    first = false;
   }
 
   requestAnimationFrame(recalc);
